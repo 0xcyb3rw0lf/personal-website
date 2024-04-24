@@ -1,6 +1,10 @@
-- name: eJPT - eLearn Junior Penetration Tester
+- name: eCPPT - Certified Professional Penetration Tester
+  image: assets/images/certs-badges/eCPPT-cert-badge.png
+  link: "https://certs.ine.com/6b7773f3-6519-4fe8-ac53-f8b34c3cecf7#gs.7w6704"
+  description: 04/2024
+- name: eJPT - Junior Penetration Tester
   image: assets/images/certs-badges/eJPT-cert-badge.png
-  link: 'https://certs.ine.com/19e63ebf-5394-481b-a900-19b589171ffe#gs.0zzb3j'
+  link: "https://certs.ine.com/19e63ebf-5394-481b-a900-19b589171ffe#gs.0zzb3j"
   description: 11/2023 - 11/2026
 - name: (ISC)² Certified in Cybersecurity (CC)
   image: >-
