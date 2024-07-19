@@ -37,7 +37,7 @@ I proceeded later with a `full tcp scan`, however, no new ports showed up!
 
 ## 2. Enumeration
 
-After that, I did a service detection using (`-sV`):
+After that, I did a service detection scan on the open ports using (`-sV`):
 
 ``` bash
 ┌──(0xcyb3rw0lf㉿0xcyb3rw0lf)-[~/Desktop/THM/Thompson]
@@ -58,13 +58,13 @@ From there, I visited the web server at port `8080`, and found the default page 
 
 ![home page](https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/posts/thm-writeup-thompson/image.png)
 
-Then I visited the `manager` page, and it required authentication. When I clicked cancel, the `401 Unauthorized` page showed up, and it had some interesting information:
+Then I visited the `manager` page, and it required authentication. When I clicked `cancel`, the `401 Unauthorized` page showed up, and it had some interesting information:
 
 ![manager app](https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/posts/thm-writeup-thompson/image-1.png)
 
 ![401 Unauthorized page](https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/posts/thm-writeup-thompson/image-2.png)
 
-As you see, the page showed the default credentials for the manager, which are `tomcat:s3cret`. I tried to login with these credentials, and it worked! We could do some brute-forcing here with the known default credentials, but we don't need to do that now. [This page](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat)has a list of default credentials for Apache Tomcat. Besides, it will be a good reference later in this writeup.
+As you see, the page showed a message with an example that contains - one of - the default credentials for the manager account (`tomcat:s3cret`). I tried to login with these credentials, and it worked! We could do some brute-forcing here with the known default credentials, but we don't need to do that now. [This page](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat) has a list of default credentials for Apache Tomcat. Besides, it will be a good reference later in this writeup.
 
 ![manager web page](https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/posts/thm-writeup-thompson/image-3.png)
 
@@ -251,4 +251,4 @@ cat root.txt
 
 ## References
 
-1. [Tomcat | HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat)
+1. [Tomcat - HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/tomcat)
