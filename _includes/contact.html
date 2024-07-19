@@ -72,6 +72,11 @@
                     <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/f13ef9bcc033966452431f7337aa51d6c2b13f64/assets/images/websites-logos/THM.svg"
                         alt="tryhackme profile" style="height: 1em;"></a>
                 {% endunless %}
+                {% unless site.hackthebox_username == %}
+                <a href="https://app.hackthebox.com/profile/{{site.hackthebox_username}}" target="_blank" class="has-text-black">
+                    <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/websites-logos/hackthebox-bw.png"
+                        alt="hackthebox profile" style="height: 1em;"></a>
+                {% endunless %}
             </div>
         </div>
     </div>
