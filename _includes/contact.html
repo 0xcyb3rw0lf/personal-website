@@ -26,59 +26,80 @@
             <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
                 You Can find me here
             </h3>
+
             <div class="column is-full is-size-3">
-                {% unless site.facebook_username == %}
+                <!-- {% unless site.facebook_username == %}
                 <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i
                     class="fab fa-facebook"></i></a>
-                    {% endunless %}
-                {% unless site.twitter_username == %}
+                    {% endunless %} -->
+
+                <!-- {% unless site.twitter_username == %}
                 <a href="https://twitter.com/intent/user?screen_name={{site.twitter_username}}" target="_blank"
                     class="has-text-black"><i class="fab fa-twitter"></i></a>
-                    {% endunless %}
-                    {% unless site.instagram_username == %}
-                    <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i
-                        class="fab fa-instagram"></i></a>
-                        {% endunless %}
-                        {% unless site.linkedin_username == %}
-                        <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
-                        class="has-text-black"><i class="fab fa-linkedin"></i></a>
+                {% endunless %} -->
+
+                <!-- {% unless site.instagram_username == %}
+                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i
+                    class="fab fa-instagram"></i></a>
+                {% endunless %} -->
+    
+                <a href="https://www.google.com" target="_blank"
+                class="has-text-black">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                {% unless site.linkedin_username == %}
+                <!-- <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
+                class="has-text-black"><i class="fa-brands fa-linkedin"></i></a> -->
+                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank"
+                    class="has-text-black">
+                    <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin profile" style="height: 1em;">
+                </a>
                 {% endunless %}
+
                 {% unless site.github_username == %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i
-                    class="fab fa-github"></i></a>
-                    {% endunless %}
-                    {% unless site.youtube_channel_id == %}
+                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black">
+                    <!-- <i class="fa-brands fa-github"></i> -->
+                    <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png" alt="linkedin profile" style="height: 1em;">
+                </a>
+                {% endunless %}
+
+                <!-- {% unless site.youtube_channel_id == %}
                     <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank"
                     class="has-text-black"><i class="fab fa-youtube"></i></a>
-                    {% endunless %}
-                    {% unless site.reddit_username == %}
+                {% endunless %} -->
+                    
+                <!-- {% unless site.reddit_username == %}
                     <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i
-                        class="fab fa-reddit"></i></a>
-                        {% endunless %}
-                        {% unless site.behance_username == %}
-                        <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i
-                            class="fab fa-behance"></i></a>
-                            {% endunless %}
-                {% unless site.dribbble_username == %}
+                    class="fab fa-reddit"></i></a>
+                {% endunless %} -->
+    
+                <!-- {% unless site.behance_username == %}
+                    <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i
+                        class="fab fa-behance"></i></a>
+                {% endunless %} -->
+
+                <!-- {% unless site.dribbble_username == %}
                 <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i
                     class="fab fa-dribbble"></i></a>
                     {% endunless %}
                     {% unless site.spotify_username == %}
                     <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank"
                     class="has-text-black"><i class="fab fa-spotify"></i></a>
-                    {% endunless %}
+                    {% endunless %} -->
+
                 {% unless site.tryhackme_username == %}
-                <a href="https://tryhackme.com/p/{{site.tryhackme_username}}" target="_blank" class="has-text-black">
-                    <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/f13ef9bcc033966452431f7337aa51d6c2b13f64/assets/images/websites-logos/THM.svg"
-                    alt="tryhackme profile" style="height: 1em;"></a>
+                    <a href="https://tryhackme.com/p/{{site.tryhackme_username}}" target="_blank" class="has-text-black">
+                        <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/f13ef9bcc033966452431f7337aa51d6c2b13f64/assets/images/websites-logos/THM.svg"
+                            alt="tryhackme profile" style="height: 1em;"></a>
                     {% endunless %}
-                    {% unless site.hackthebox_username == %}
-                <a href="https://app.hackthebox.com/profile/{{site.hackthebox_username}}" target="_blank" class="has-text-black">
-                    <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/websites-logos/hackthebox-bw.png"
-                    alt="hackthebox profile" style="height: 1em;"></a>
-                    {% endunless %}
-                </div>
-                <script src="https://tryhackme.com/badge/2360249"></script>
+                
+                {% unless site.hackthebox_username == %}
+                    <a href="https://app.hackthebox.com/profile/{{site.hackthebox_username}}" target="_blank" class="has-text-black">
+                        <img src="https://raw.githubusercontent.com/omar-danasoury/personal-website/master/assets/images/websites-logos/hackthebox-bw.png"
+                        alt="hackthebox profile" style="height: 1em;"></a>
+                {% endunless %}
+                
+                <!-- <script src="https://tryhackme.com/badge/2360249"></script> -->
             </div>
         </div>
     </section>
